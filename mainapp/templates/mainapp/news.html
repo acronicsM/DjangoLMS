@@ -1,19 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load job_to_dictionary  %}
 
 {% block content %}
 
 <div class="row">
 
   <div class="col-lg-8">
-    {% for i in list_news %}
+    {% for i in news_qs %}
      <div class="card my-2">
         <div class="card-body">
-          <h5 class="card-title">{{i|job_to_dictionary:'title'}}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{i|job_to_dictionary:'publishedAt'}}</h6>
-          <p class="card-text">{{i|job_to_dictionary:'content'}}</p>
-          <a href="#" class="card-link">Подробнее</a>
+          <h5 class="card-title"> {{i.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">31-08-2022</h6>
+          <p class="card-text">{{i.preamble}}</p>
+          <a href="{% url 'mainapp:news_detail' pk=i.pk %}" class="card-link">Подробнее</a>
         </div>
       </div>
     {% endfor %}
@@ -51,9 +50,9 @@
   <nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item"><a class="page-link" href="{% url 'mainapp:news_paginator' 1 %}?param1=foo">1</a></li>
-      <li class="page-item"><a class="page-link" href="{% url 'mainapp:news_paginator' page=2 %}">2</a></li>
-      <li class="page-item"><a class="page-link" href="{% url 'mainapp:news_paginator' 3 %}">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
       <li class="page-item"><a class="page-link" href="#">Next</a></li>
     </ul>
   </nav>
