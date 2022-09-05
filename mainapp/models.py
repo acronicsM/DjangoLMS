@@ -14,6 +14,10 @@ class News(models.Model):
     def __str__(self) -> str:
         return f'{self.pk} {self.title}'
 
+    def delete(self, *args):
+        self.deleted = True
+        self.save()
+
 
 class CoursesManager(models.Manager):
     def get_queryset(self):
@@ -21,7 +25,7 @@ class CoursesManager(models.Manager):
 
 
 class Courses(models.Model):
-    object = CoursesManager()
+    objects = CoursesManager()
 
     name = models.CharField(max_length=256, verbose_name='Name')
     description = models.TextField(verbose_name='Description', blank=True, null=True)
