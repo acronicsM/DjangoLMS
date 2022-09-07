@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'social_django',
     'mainapp',
     'authapp',
+    'crispy_forms',
+    'rangefilter',
 ]
 
 MIDDLEWARE = [
@@ -153,3 +155,5 @@ SOCIAL_AUTH_GITHUB_SECRET = 'd82e0cf7e22f84f01e259465a48f54321d99283a'
 SOCIAL_AUTH_VK_OAUTH2_KEY = '51418168'
 SOCIAL_AUTH_VK_OAUTH2_SECRET = 'jGZcm2OUgnfbEbKrRpAR'
 SOCIAL_AUTH_VK_OAUTH2_SCOPE = ['notify','friends','email']
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
