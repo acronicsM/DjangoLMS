@@ -1,4 +1,5 @@
 from django.contrib import admin
+from rangefilter.filters import DateRangeFilter, DateTimeRangeFilter
 from mainapp import models as mainapp_models
 from django.utils.translation import gettext_lazy as _
 
@@ -6,6 +7,9 @@ from django.utils.translation import gettext_lazy as _
 @admin.register(mainapp_models.News)
 class NewsAdmin(admin.ModelAdmin):
     search_fields = ["title", "preamble", "body"]
+    list_filter = (
+        ('created', DateRangeFilter),
+    )
 
 
 @admin.register(mainapp_models.Lesson)

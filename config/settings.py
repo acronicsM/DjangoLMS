@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'mainapp',
     'authapp',
     'crispy_forms',
+    'rangefilter',
 ]
 
 MIDDLEWARE = [
