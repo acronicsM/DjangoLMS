@@ -1,0 +1,1 @@
+open("mydata-new.json","wb").write(open("mydata.json").read().decode("unicode_escape").encode("utf8"))
