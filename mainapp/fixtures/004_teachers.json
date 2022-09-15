@@ -1,0 +1,114 @@
+[
+
+    {
+        "model": "mainapp.courseteachers",
+        "pk": 1,
+        "fields": {
+            "name_first": "Преподаватель0",
+            "name_second": "Иванов",
+            "day_birth": "2022-08-31",
+            "deleted": false,
+            "course": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "mainapp.courseteachers",
+        "pk": 2,
+        "fields": {
+            "name_first": "Преподаватель1",
+            "name_second": "Иванов",
+            "day_birth": "2022-08-31",
+            "deleted": false,
+            "course": [
+                1,
+                7
+            ]
+        }
+    },
+    {
+        "model": "mainapp.courseteachers",
+        "pk": 3,
+        "fields": {
+            "name_first": "Преподаватель2",
+            "name_second": "Иванов",
+            "day_birth": "2022-08-31",
+            "deleted": false,
+            "course": [
+                1,
+                8
+            ]
+        }
+    },
+    {
+        "model": "mainapp.courseteachers",
+        "pk": 4,
+        "fields": {
+            "name_first": "Преподаватель3",
+            "name_second": "Иванов",
+            "day_birth": "2022-08-31",
+            "deleted": false,
+            "course": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "mainapp.courseteachers",
+        "pk": 5,
+        "fields": {
+            "name_first": "Преподаватель4",
+            "name_second": "Иванов",
+            "day_birth": "2022-08-31",
+            "deleted": false,
+            "course": [
+                1,
+                4
+            ]
+        }
+    },
+    {
+        "model": "mainapp.courseteachers",
+        "pk": 6,
+        "fields": {
+            "name_first": "Преподаватель5",
+            "name_second": "Иванов",
+            "day_birth": "2022-08-31",
+            "deleted": false,
+            "course": [
+                4,
+                7
+            ]
+        }
+    },
+    {
+        "model": "mainapp.courseteachers",
+        "pk": 7,
+        "fields": {
+            "name_first": "Преподаватель6",
+            "name_second": "Иванов",
+            "day_birth": "2022-08-31",
+            "deleted": false,
+            "course": [
+                3,
+                5
+            ]
+        }
+    },
+    {
+        "model": "mainapp.courseteachers",
+        "pk": 8,
+        "fields": {
+            "name_first": "Преподаватель7",
+            "name_second": "Иванов",
+            "day_birth": "2022-08-31",
+            "deleted": false,
+            "course": [
+                3
+            ]
+        }
+    }
+]
